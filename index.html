@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+    
+    <div class="content">
+
+        <h1 class="logo">Formulario</h1>
+
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <form  action="index.html" id="formulario" class="formulario">
+                    <p>
+                        <label for="fullname">Nombre Completo:</label>
+                        <input type="text" name="fullname" id="fullname">
+                    </p>
+                    <p>
+                        <label for="direccion">Nacionalidad:</label>
+                        <input type="text" name="Nacionalidad" id="direccion">
+                    </p>
+                    <p>
+                        Seleccione su genero:
+                        <br>
+                        <select id="genero">
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                        </select>
+
+                    </p>
+                    <p>
+                        <label for="FDN">Fecha De Nacimiento:</label>
+
+                        <input type="date" name="trip-start" id="FDN"
+                        
+                        min="1970-01-01" max="2030-12-31">
+                    </p>
+                    <p class="block">
+                       <label for="password">Contraseña:</label> 
+                        <input type="password" name="password" id="password">
+                    </p>
+                    <p class="block">
+                        <button type="submit" onclick="EnviarFormulario()">
+                            Enviar
+                        </button>
+                    </p>
+                </form>
+            </div>
+            <div class="contact-info">
+                <p>Por Favor complete todos los campos para acceder a la encuesta. <br><br> Gracias!</p>
+                <p> Pagina web Recomendada para visitar. <br> Enlace : alesaturno.github.io</p>
+                <h4>Todos los Derechos reservados a <br> Alejandro Saturno.</h4>
+            </div>
+        </div>
+
+    </div>
+    <div id="error"></div>
+    <script src="Formulario.js"></script>
+</body>
+</html>
