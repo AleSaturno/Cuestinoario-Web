@@ -43,7 +43,7 @@ const EnviarDatos = () =>{
     }
 
     else{
-        alert('Encuesta Finalazada. Gracias!!')
+        alert('Encuesta Finalizada. Gracias!!')
         window.location.href = 'index.html'
     }
 
